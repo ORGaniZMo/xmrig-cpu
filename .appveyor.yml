@@ -26,12 +26,11 @@ build_script:
   - msbuild xmrig.sln /p:Configuration=Release
 
 test_script:
-  - cd c:\xmrig\build\Release
+  - cd c:\xmrig
+  - 7z a c:\xmrig\xmrig.zip "c:\xmrig\build\Release\*.exe" "c:\xmrig\src\config.json"
   - dir
-  - 7z a c:\xmrig.zip "c:\xmrig\build\Release\*.exe" "c:\xmrig\src\config.json"
-  - dir c:\
 
 
 artifacts:
-  - path: c:\xmrig.zip
+  - path: xmrig.zip
   
