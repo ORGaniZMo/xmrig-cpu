@@ -32,5 +32,5 @@ test_script:
 
 
 artifacts:
-  - path: xmrig.zip
+  - path: c:\xmrig.zip
   
