@@ -26,8 +26,8 @@ build_script:
   - msbuild xmrig.sln /p:Configuration=Release
 
 test_script:
-  - cd c:\xmrig\build
-  - 7z a xmrig.zip "c:\xmrig\build\"
+  - cd c:\xmrig\build\Release
+  - 7z a c:\xmrig.zip "c:\xmrig\build\Release\"
   - dir
 
 
